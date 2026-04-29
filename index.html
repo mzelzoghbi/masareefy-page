@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#FAF6EF" />
+  <meta name="description" content="Masareefy — bilingual personal finance app built for Egypt. Track bank SMS, cash, wallets, gold, and Zakah in one place." />
+  <title>Masareefy — Personal finance, built for Egypt</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── Nav ─────────────────────────────────────────── -->
+  <header class="nav" role="banner">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="Masareefy home">
+        <span class="brand-mark" aria-hidden="true"><img src="logo.svg" alt="" /></span>
+        <span data-en="Masareefy" data-ar="مصاريفي">Masareefy</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#features" data-en="Features" data-ar="المميزات">Features</a>
+        <a href="#how" data-en="How it works" data-ar="طريقة العمل">How it works</a>
+        <a href="#faq" data-en="FAQ" data-ar="الأسئلة">FAQ</a>
+        <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch to العربية">
+          العربية
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ─── Hero ─────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-copy reveal">
+          <span class="hero-eyebrow">
+            <span class="dot" aria-hidden="true"></span>
+            <span data-en="iPhone · Coming soon to App Store" data-ar="آيفون · قريباً على App Store">
+              iPhone · Coming soon to App Store
+            </span>
+          </span>
+
+          <h1 data-en="Money that makes sense — in <span class='accent'>Arabic</span> and English." data-ar="فلوسك تبقى واضحة — <span class='accent'>بالعربي</span> والإنجليزي." data-html-ok="true">
+            Money that makes sense — in <span class="accent">Arabic</span> and English.
+          </h1>
+
+          <p class="lede"
+             data-en="Masareefy turns your bank SMS, cash, and wallets into one clear picture. Built for Egypt, in Arabic and English — with Zakah and gold tracking baked in."
+             data-ar="مصاريفي يجمع رسائل البنك، الكاش، والمحافظ في صورة واحدة. مصمم لمصر، بالعربي والإنجليزي — مع حساب الزكاة وتتبع الذهب جاهزين.">
+            Masareefy turns your bank SMS, cash, and wallets into one clear picture. Built for Egypt, in Arabic and English — with Zakah and gold tracking baked in.
+          </p>
+
+          <div class="hero-ctas">
+            <a class="appstore" href="#" aria-label="Download on the App Store">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.365 1.43c0 1.14-.41 2.21-1.23 3.18-.99 1.18-2.18 1.86-3.47 1.76-.16-1.12.4-2.29 1.21-3.21.9-1.02 2.34-1.78 3.49-1.73zm3.6 16.83c-.55 1.27-.81 1.83-1.51 2.95-.98 1.55-2.36 3.49-4.07 3.5-1.52.02-1.91-.99-3.97-.97-2.06.01-2.49.99-4.02.97-1.71-.02-3.02-1.77-4-3.32-2.74-4.34-3.03-9.43-1.34-12.14C2.27 7.4 4.18 6.4 5.97 6.4c1.83 0 2.97 1 4.48 1 1.46 0 2.35-1 4.46-1 1.6 0 3.3.87 4.51 2.37-3.96 2.17-3.32 7.83.54 9.49z"/></svg>
+              <span class="text">
+                <span class="top" data-en="Download on the" data-ar="حمّل التطبيق من">Download on the</span>
+                <span class="bot" data-en="App Store" data-ar="App Store">App Store</span>
+              </span>
+            </a>
+            <a class="btn btn-secondary" href="#how">
+              <span data-en="See how it works" data-ar="شوف كيف يشتغل">See how it works</span>
+              <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <span data-en="Designed by money nerds, for Egyptian wallets." data-ar="مصمم بدقة، لمحفظتك المصرية.">
+              Designed by money nerds, for Egyptian wallets.
+            </span>
+          </div>
+        </div>
+
+        <div class="phone-stage reveal" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="status-bar">
+                <span data-num="9:41">9:41</span>
+                <span class="status-icons">
+                  <svg width="14" height="10" viewBox="0 0 18 12" fill="currentColor" aria-hidden="true"><path d="M2 8h2v3H2zM6 6h2v5H6zM10 4h2v7h-2zM14 1h2v10h-2z"/></svg>
+                  <svg width="14" height="10" viewBox="0 0 18 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="1" y="3" width="14" height="6" rx="1.4"/><rect x="15.5" y="5" width="1.6" height="2" rx="0.4" fill="currentColor"/></svg>
+                </span>
+              </div>
+              <div class="screen-content">
+                <div class="greet" data-en="Good morning" data-ar="صباح الخير">Good morning</div>
+                <div class="greet-name" data-en="Zak" data-ar="زاك">Zak</div>
+
+                <div class="balance-card">
+                  <div class="balance-label" data-en="Total Balance" data-ar="إجمالي الرصيد">Total Balance</div>
+                  <div class="balance-value">
+                    <span data-num="78,175">78,175</span> <span style="font-size:14px;font-weight:600;opacity:.85" data-en="EGP" data-ar="ج.م">EGP</span>
+                  </div>
+                  <div class="balance-delta">
+                    <span data-en="↑ 4.2% vs last month" data-ar="↑ ٤٫٢٪ عن الشهر الماضي">↑ 4.2% vs last month</span>
+                  </div>
+                </div>
+
+                <div class="tile-row">
+                  <div class="tile">
+                    <div class="tile-label" data-en="Spent" data-ar="مصروفات">Spent</div>
+                    <div class="tile-value">
+                      <span data-num="9,840">9,840</span>
+                    </div>
+                    <div class="tile-bar"><span style="width:62%"></span></div>
+                  </div>
+                  <div class="tile income">
+                    <div class="tile-label" data-en="Income" data-ar="دخل">Income</div>
+                    <div class="tile-value">
+                      <span data-num="22,500">22,500</span>
+                    </div>
+                    <div class="tile-bar"><span style="width:88%"></span></div>
+                  </div>
+                </div>
+
+                <div class="tx-list">
+                  <div class="tx-row">
+                    <div class="tx-icon expense" aria-hidden="true">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 7h18M3 12h18M3 17h12"/></svg>
+                    </div>
+                    <div class="tx-meta">
+                      <div class="tx-title" data-en="Talabat — Abou El Sid" data-ar="طلبات — أبو السيد">Talabat — Abou El Sid</div>
+                      <div class="tx-sub" data-en="Today · Card 4542" data-ar="اليوم · بطاقة ٤٥٤٢">Today · Card 4542</div>
+                    </div>
+                    <div class="tx-amt neg">
+                      − <span data-num="245">245</span>
+                    </div>
+                  </div>
+                  <div class="tx-row">
+                    <div class="tx-icon gold" aria-hidden="true">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 12h6M12 9v6"/></svg>
+                    </div>
+                    <div class="tx-meta">
+                      <div class="tx-title" data-en="Gold · 8g 21k" data-ar="ذهب · ٨ جم عيار ٢١">Gold · 8g 21k</div>
+                      <div class="tx-sub" data-en="Holding" data-ar="رصيد">Holding</div>
+                    </div>
+                    <div class="tx-amt">
+                      <span data-num="22,400">22,400</span>
+                    </div>
+                  </div>
+                  <div class="tx-row">
+                    <div class="tx-icon zakah" aria-hidden="true">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/></svg>
+                    </div>
+                    <div class="tx-meta">
+                      <div class="tx-title" data-en="Zakah — due in 42 days" data-ar="الزكاة — خلال ٤٢ يوم">Zakah — due in 42 days</div>
+                      <div class="tx-sub" data-en="Hawl complete soon" data-ar="الحول قارب على الانتهاء">Hawl complete soon</div>
+                    </div>
+                    <div class="tx-amt">
+                      <span data-num="1,820">1,820</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── Trust strip ─────────────────────────────────────────── -->
+    <section class="trust" aria-label="At a glance">
+      <div class="container trust-inner">
+        <span class="pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.35-7-10a7 7 0 0 1 14 0c0 5.65-7 10-7 10z"/><circle cx="12" cy="11" r="2.4"/></svg>
+          <span data-en="Built for Egypt" data-ar="مصمم لمصر">Built for Egypt</span>
+        </span>
+        <span class="pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v12M9 9h5a2 2 0 1 1 0 4H9M9 13h5.5a2 2 0 1 1 0 4H9"/></svg>
+          <span data-en="EGP-first" data-ar="بالجنيه المصري">EGP-first</span>
+        </span>
+        <span class="pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h11M5 12h7M5 16h9"/><path d="M14 4l5 5-5 5"/></svg>
+          <span data-en="Arabic and English" data-ar="عربي وإنجليزي">Arabic and English</span>
+        </span>
+        <span class="pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 1 1 8 0v3"/></svg>
+          <span data-en="Privacy-first" data-ar="خصوصية أولاً">Privacy-first</span>
+        </span>
+      </div>
+    </section>
+
+    <!-- ─── Features (bento) ─────────────────────────────────────────── -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-en="What's inside" data-ar="ما بداخله">What's inside</span>
+          <h2 data-en="Everything your money does — in one app." data-ar="كل ما يخص فلوسك — في تطبيق واحد.">
+            Everything your money does — in one app.
+          </h2>
+          <p data-en="Five powerful tools that work together. No spreadsheets, no manual entry, no currency guesswork."
+             data-ar="خمس أدوات قوية تشتغل سوا. بدون شيتات إكسل، بدون إدخال يدوي، بدون تخمين عملات.">
+            Five powerful tools that work together. No spreadsheets, no manual entry, no currency guesswork.
+          </p>
+        </div>
+
+        <div class="bento">
+
+          <!-- 1. SMS auto-track — featured tile, spans 4 cols -->
+          <article class="feature featured span-4 reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3 data-en="Auto-track from your bank SMS" data-ar="تتبع تلقائي من رسائل البنك">Auto-track from your bank SMS</h3>
+            <p data-en="Share a CIB, NBE, Banque Misr, or Vodafone Cash message once. Masareefy parses the amount, merchant, and account, and saves the transaction. We never read your inbox."
+               data-ar="شارك رسالة من CIB، الأهلي، بنك مصر، أو فودافون كاش مرة واحدة. مصاريفي يستخرج المبلغ، التاجر، والحساب، ويحفظ المعاملة. لن نقرأ صندوق رسائلك أبداً.">
+              Share a CIB, NBE, Banque Misr, or Vodafone Cash message once. Masareefy parses the amount, merchant, and account, and saves the transaction. We never read your inbox.
+            </p>
+            <div class="sms-demo">
+              <div class="from" data-en="CIB · 2 min ago" data-ar="CIB · من ٢ دقيقة">CIB · 2 min ago</div>
+              <div class="body" data-en="EGP 245 charged on card 4542 at Talabat — Abou El Sid. Available balance EGP 78,175."
+                   data-ar="تم خصم ٢٤٥ ج.م من بطاقتك ٤٥٤٢ في طلبات — أبو السيد. الرصيد المتاح ٧٨٬١٧٥ ج.م.">
+                EGP 245 charged on card 4542 at Talabat — Abou El Sid. Available balance EGP 78,175.
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Budgets, span 2 -->
+          <article class="feature sand-bg span-2 reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0z"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <h3 data-en="Budgets &amp; goals" data-ar="ميزانيات وأهداف">Budgets &amp; goals</h3>
+            <p data-en="Set a number, see the gap. Daily nudges keep you on track without the guilt-trip."
+               data-ar="حدد المبلغ، شوف الفرق. تنبيهات يومية تساعدك من غير ضغط نفسي.">
+              Set a number, see the gap. Daily nudges keep you on track without the guilt-trip.
+            </p>
+          </article>
+
+          <!-- 3. Zakah, span 3 -->
+          <article class="feature zakah-bg span-3 reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3 data-en="Zakah, calculated correctly" data-ar="الزكاة بدقة">Zakah, calculated correctly</h3>
+            <p data-en="Cash, gold, investments, receivables, debts — every input the standard fiqh requires, with a clear Hawl tracker. No spreadsheets, no second-guessing."
+               data-ar="الكاش، الذهب، الاستثمارات، الحقوق، الديون — كل المدخلات اللي يحتاجها الفقه القياسي، مع متابعة واضحة للحول. بدون شيتات، بدون شك.">
+              Cash, gold, investments, receivables, debts — every input the standard fiqh requires, with a clear Hawl tracker. No spreadsheets, no second-guessing.
+            </p>
+          </article>
+
+          <!-- 4. Gold, span 3 -->
+          <article class="feature gold-bg span-3 reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 12h6M12 9v6"/></svg>
+            </div>
+            <h3 data-en="Gold portfolio, live" data-ar="محفظة الذهب لحظياً">Gold portfolio, live</h3>
+            <p data-en="Track every gram across 18k, 21k, 24k. Live Cairo gram price means you always know where you stand."
+               data-ar="تابع كل جرام في عيار ١٨، ٢١، ٢٤. سعر القاهرة لحظة بلحظة، عشان دايماً تعرف موقفك.">
+              Track every gram across 18k, 21k, 24k. Live Cairo gram price means you always know where you stand.
+            </p>
+          </article>
+
+          <!-- 5. Siri, span 2 — wait, we used 4+2+3+3 = 12, no room. Restructure: -->
+          <!-- Layout actually: row1 = 4+2 (6), row2 = 3+3 (6), row3 = 6 spans for Siri+widget? Let's leave Siri as span-4 + extra -->
+
+          <article class="feature span-3 reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+            </div>
+            <h3 data-en="Siri shortcuts" data-ar="اختصارات سيري">Siri shortcuts</h3>
+            <p data-en="“Hey Siri, log a Masareefy expense.” Voice-log on the go, hands-free, in either language."
+               data-ar="«يا سيري، سجّل مصروف في مصاريفي.» تسجيل بالصوت، وأنت ماشي، بلغتك.">
+              “Hey Siri, log a Masareefy expense.” Voice-log on the go, hands-free, in either language.
+            </p>
+          </article>
+
+          <article class="feature span-3 reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+            </div>
+            <h3 data-en="Home Screen widgets" data-ar="ودجات الشاشة الرئيسية">Home Screen widgets</h3>
+            <p data-en="Today's spend, budgets remaining, upcoming Zakah — pinned to your lock screen and home screen."
+               data-ar="مصروفات اليوم، الميزانية المتبقية، الزكاة القادمة — مثبتة على شاشة القفل والرئيسية.">
+              Today's spend, budgets remaining, upcoming Zakah — pinned to your lock screen and home screen.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── How it works ─────────────────────────────────────────── -->
+    <section class="section how" id="how">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-en="How it works" data-ar="طريقة العمل">How it works</span>
+          <h2 data-en="Three taps. One transaction. Zero typing." data-ar="ثلاث ضغطات. معاملة واحدة. بدون كتابة.">
+            Three taps. One transaction. Zero typing.
+          </h2>
+          <p data-en="Most expense apps ask you to type every purchase. We ask you to share an SMS once."
+             data-ar="معظم التطبيقات بتطلب منك تكتب كل عملية. إحنا بنطلب رسالة واحدة فقط.">
+            Most expense apps ask you to type every purchase. We ask you to share an SMS once.
+          </p>
+        </div>
+
+        <div class="steps">
+
+          <article class="step reveal">
+            <span class="step-num" data-num="1">1</span>
+            <h3 data-en="Share an SMS" data-ar="شارك الرسالة">Share an SMS</h3>
+            <p data-en="Long-press a bank or wallet message and tap Share → Masareefy."
+               data-ar="اضغط مطولاً على رسالة البنك أو المحفظة، ثم Share → مصاريفي.">
+              Long-press a bank or wallet message and tap Share → Masareefy.
+            </p>
+            <div class="mini-screen">
+              <div class="row">
+                <div class="bubble-grey"
+                     data-en="EGP 245 charged on card 4542 at Talabat — Abou El Sid."
+                     data-ar="تم خصم ٢٤٥ ج.م من بطاقتك ٤٥٤٢ في طلبات — أبو السيد.">
+                  EGP 245 charged on card 4542 at Talabat — Abou El Sid.
+                </div>
+              </div>
+              <div style="margin-top:14px; display:flex; align-items:center; gap:8px; color: var(--text-3); font-size:11.5px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="M16 6l-4-4-4 4M12 2v14"/></svg>
+                <span data-en="Tap Share → Masareefy" data-ar="Share → مصاريفي">Tap Share → Masareefy</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="step reveal">
+            <span class="step-num" data-num="2">2</span>
+            <h3 data-en="We parse it" data-ar="نحن نحلّلها">We parse it</h3>
+            <p data-en="Amount, merchant, account, date — extracted on-device using your rules."
+               data-ar="المبلغ، التاجر، الحساب، التاريخ — يتم استخراجها على جهازك بقواعدك.">
+              Amount, merchant, account, date — extracted on-device using your rules.
+            </p>
+            <div class="mini-screen">
+              <div class="parsed">
+                <div class="field"><span class="k" data-en="Amount" data-ar="المبلغ">Amount</span><span class="v"><span data-num="245">245</span> <span data-en="EGP" data-ar="ج.م">EGP</span></span></div>
+                <div class="field"><span class="k" data-en="Merchant" data-ar="التاجر">Merchant</span><span class="v" data-en="Talabat" data-ar="طلبات">Talabat</span></div>
+                <div class="field"><span class="k" data-en="Account" data-ar="الحساب">Account</span><span class="v" data-en="CIB · 4542" data-ar="CIB · ٤٥٤٢">CIB · 4542</span></div>
+                <div class="field"><span class="k" data-en="Category" data-ar="الفئة">Category</span><span class="v" data-en="Food &amp; Drink" data-ar="مأكولات ومشروبات">Food &amp; Drink</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="step reveal">
+            <span class="step-num" data-num="3">3</span>
+            <h3 data-en="Saved &amp; counted" data-ar="محفوظة ومحسوبة">Saved &amp; counted</h3>
+            <p data-en="The transaction lands in your budget. Review, edit, or undo with one tap."
+               data-ar="المعاملة تظهر في ميزانيتك. راجع، عدّل، أو تراجع بضغطة واحدة.">
+              The transaction lands in your budget. Review, edit, or undo with one tap.
+            </p>
+            <div class="mini-screen">
+              <span class="saved-pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>
+                <span data-en="Saved to Food &amp; Drink" data-ar="محفوظة في مأكولات ومشروبات">Saved to Food &amp; Drink</span>
+              </span>
+              <div style="margin-top:14px;">
+                <div class="parsed">
+                  <div class="field"><span class="k" data-en="Budget · Food" data-ar="ميزانية · أكل">Budget · Food</span><span class="v"><span data-num="2,755">2,755</span> / <span data-num="3,000">3,000</span></span></div>
+                  <div class="field"><span class="k" data-en="Days left" data-ar="أيام متبقية">Days left</span><span class="v"><span data-num="11">11</span></span></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Why Masareefy ─────────────────────────────────────────── -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-en="Why Masareefy" data-ar="ليه مصاريفي">Why Masareefy</span>
+          <h2 data-en="Most apps treat Egypt as an afterthought." data-ar="معظم التطبيقات بتعامل مصر كأنها فكرة لاحقة.">
+            Most apps treat Egypt as an afterthought.
+          </h2>
+          <p data-en="We started here. Every decision — currency, banks, language, calendar — is built around the Egyptian wallet."
+             data-ar="إحنا ابتدينا من هنا. كل قرار — العملة، البنوك، اللغة، التقويم — مبني حول المحفظة المصرية.">
+            We started here. Every decision — currency, banks, language, calendar — is built around the Egyptian wallet.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-item reveal">
+            <div class="why-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 6v12M9 9h5a2 2 0 1 1 0 4H9M9 13h5.5a2 2 0 1 1 0 4H9"/></svg></div>
+            <div>
+              <h4 data-en="EGP-first, no guesswork" data-ar="بالجنيه أولاً، بدون تخمين">EGP-first, no guesswork</h4>
+              <p data-en="Every screen, chart, and import defaults to EGP. Multi-currency is opt-in."
+                 data-ar="كل شاشة، رسم بياني، واستيراد يبدأ بالجنيه المصري. العملات الأخرى اختيارية.">
+                Every screen, chart, and import defaults to EGP. Multi-currency is opt-in.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-item reveal">
+            <div class="why-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h3"/></svg></div>
+            <div>
+              <h4 data-en="Built for local banks &amp; wallets" data-ar="مصمم للبنوك والمحافظ المحلية">Built for local banks &amp; wallets</h4>
+              <p data-en="CIB, NBE, Banque Misr, QNB, AAIB, Vodafone Cash, Instapay — recognized out of the box."
+                 data-ar="CIB، الأهلي، بنك مصر، QNB، الإسكندرية، فودافون كاش، إنستاباي — معروفين من اللحظة الأولى.">
+                CIB, NBE, Banque Misr, QNB, AAIB, Vodafone Cash, Instapay — recognized out of the box.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-item reveal">
+            <div class="why-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/></svg></div>
+            <div>
+              <h4 data-en="Zakah and gold built-in" data-ar="زكاة وذهب مدمجان">Zakah and gold built-in</h4>
+              <p data-en="Not a paid add-on. Standard Nisab thresholds, Hawl tracking, and live gram pricing."
+                 data-ar="ليست إضافة مدفوعة. نُصُب قياسية، متابعة الحول، وأسعار جرام لحظية.">
+                Not a paid add-on. Standard Nisab thresholds, Hawl tracking, and live gram pricing.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-item reveal">
+            <div class="why-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h16"/></svg></div>
+            <div>
+              <h4 data-en="Arabic typography that breathes" data-ar="خط عربي بمذاق حقيقي">Arabic typography that breathes</h4>
+              <p data-en="Noto Kufi Arabic, proper RTL, Arabic numerals, Hijri calendar. Not just a translated screen."
+                 data-ar="نوتو كوفي عربي، RTL سليم، أرقام عربية، تقويم هجري. ليست مجرد شاشة مترجمة.">
+                Noto Kufi Arabic, proper RTL, Arabic numerals, Hijri calendar. Not just a translated screen.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-item reveal">
+            <div class="why-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 1 1 8 0v3"/></svg></div>
+            <div>
+              <h4 data-en="Your data lives on your phone" data-ar="بياناتك على هاتفك">Your data lives on your phone</h4>
+              <p data-en="No cloud account required. iCloud sync is optional and end-to-end encrypted."
+                 data-ar="بدون حساب سحابي إجباري. مزامنة iCloud اختيارية ومشفرة من الطرف للطرف.">
+                No cloud account required. iCloud sync is optional and end-to-end encrypted.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-item reveal">
+            <div class="why-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div>
+              <h4 data-en="Designed, not configured" data-ar="مصمم، ليس مجمّع">Designed, not configured</h4>
+              <p data-en="Opinionated defaults, an iOS-native feel, and one primary action per screen."
+                 data-ar="افتراضات مدروسة، إحساس iOS أصيل، وزر رئيسي واحد لكل شاشة.">
+                Opinionated defaults, an iOS-native feel, and one primary action per screen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Privacy callout ─────────────────────────────────────────── -->
+    <section class="section">
+      <div class="container">
+        <div class="privacy reveal">
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+          <div>
+            <h3 data-en="We never read your messages." data-ar="لن نقرأ رسائلك أبداً.">We never read your messages.</h3>
+            <p data-en="Masareefy needs no SMS permissions. You decide which message to share, and parsing happens on your device. Nothing leaves your phone unless you choose iCloud sync."
+               data-ar="مصاريفي لا يطلب صلاحية قراءة الرسائل. أنت تختار أي رسالة تشارك، والتحليل يتم على جهازك. لا شيء يغادر هاتفك إلا إذا اخترت مزامنة iCloud.">
+              Masareefy needs no SMS permissions. You decide which message to share, and parsing happens on your device. Nothing leaves your phone unless you choose iCloud sync.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Testimonials (placeholder) ─────────────────────────────────────────── -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-en="Early testers" data-ar="المختبرون الأوائل">Early testers</span>
+          <h2 data-en="What people are saying." data-ar="ماذا يقول الناس.">What people are saying.</h2>
+        </div>
+
+        <div class="tcards">
+          <article class="tcard reveal">
+            <blockquote data-en="Finally an app that speaks Arabic like I do — not a translated checkbox."
+                        data-ar="أخيراً تطبيق بيتكلم عربي زيي — مش مجرد ترجمة آلية.">
+              Finally an app that speaks Arabic like I do — not a translated checkbox.
+            </blockquote>
+            <div class="tcite">
+              <div class="tcite-avatar" data-en="Z" data-ar="ز">Z</div>
+              <div>
+                <div data-en="Zak · Cairo" data-ar="زاك · القاهرة">Zak · Cairo</div>
+                <div style="font-size:12px;opacity:.7" data-en="Architect" data-ar="مهندسة معمارية">Architect</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="tcard reveal">
+            <blockquote data-en="The SMS share trick is genius. I haven't logged an expense by hand in two months."
+                        data-ar="فكرة مشاركة الـ SMS عبقرية. مبقتش أسجّل مصروف يدوي من شهرين.">
+              The SMS share trick is genius. I haven't logged an expense by hand in two months.
+            </blockquote>
+            <div class="tcite">
+              <div class="tcite-avatar" data-en="A" data-ar="ع">A</div>
+              <div>
+                <div data-en="Amr · Alexandria" data-ar="عمرو · الإسكندرية">Amr · Alexandria</div>
+                <div style="font-size:12px;opacity:.7" data-en="Developer" data-ar="مطوّر">Developer</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="tcard reveal">
+            <blockquote data-en="Zakah calculation in 30 seconds. It used to be a whole spreadsheet day."
+                        data-ar="حساب الزكاة في ٣٠ ثانية. كان يومين كاملين على شيت إكسل.">
+              Zakah calculation in 30 seconds. It used to be a whole spreadsheet day.
+            </blockquote>
+            <div class="tcite">
+              <div class="tcite-avatar" data-en="H" data-ar="ه">H</div>
+              <div>
+                <div data-en="Heba · Mansoura" data-ar="هبة · المنصورة">Heba · Mansoura</div>
+                <div style="font-size:12px;opacity:.7" data-en="Pharmacist" data-ar="صيدلانية">Pharmacist</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FAQ ─────────────────────────────────────────── -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-en="Questions" data-ar="أسئلة">Questions</span>
+          <h2 data-en="Things we hear a lot." data-ar="أسئلة بنسمعها كتير.">Things we hear a lot.</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>
+              <span data-en="Is Masareefy free?" data-ar="مصاريفي مجاني؟">Is Masareefy free?</span>
+              <span class="chev" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+              </span>
+            </summary>
+            <p data-en="Yes — all core features (SMS parsing, budgets, Zakah, gold, Arabic and English) are free. A Premium tier adds advanced parsing rules, multi-currency, and priority support."
+               data-ar="آه — كل الميزات الأساسية (قراءة الـ SMS، الميزانيات، الزكاة، الذهب، عربي وإنجليزي) مجانية. باقة بريميوم تضيف قواعد متقدمة، عملات متعددة، ودعم سريع.">
+              Yes — all core features (SMS parsing, budgets, Zakah, gold, Arabic and English) are free. A Premium tier adds advanced parsing rules, multi-currency, and priority support.
+            </p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>
+              <span data-en="Which banks and wallets are supported?" data-ar="أي بنوك ومحافظ مدعومة؟">Which banks and wallets are supported?</span>
+              <span class="chev" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+              </span>
+            </summary>
+            <p data-en="Any bank or wallet that sends SMS notifications. We ship pre-tuned rules for CIB, NBE, Banque Misr, QNB, AAIB, ADIB, Vodafone Cash, Etisalat Cash, Instapay, and Fawry — and you can add custom rules for any other source."
+               data-ar="أي بنك أو محفظة بترسل رسائل SMS. التطبيق يأتي بقواعد جاهزة لـ CIB، الأهلي، بنك مصر، QNB، الإسكندرية، أبو ظبي الإسلامي، فودافون كاش، إتصالات كاش، إنستاباي، وفوري — وتقدر تضيف قواعد لأي مصدر آخر.">
+              Any bank or wallet that sends SMS notifications. We ship pre-tuned rules for CIB, NBE, Banque Misr, QNB, AAIB, ADIB, Vodafone Cash, Etisalat Cash, Instapay, and Fawry — and you can add custom rules for any other source.
+            </p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>
+              <span data-en="Is it really bilingual, or just translated?" data-ar="هو فعلاً ثنائي اللغة، ولا مجرد ترجمة؟">Is it really bilingual, or just translated?</span>
+              <span class="chev" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+              </span>
+            </summary>
+            <p data-en="Fully bilingual. Right-to-left layout, Noto Kufi Arabic, Arabic numerals (٠–٩), Hijri calendar option, and Arabic-aware parsing rules. Switch language anytime — your data, formatting, and reports follow."
+               data-ar="ثنائي اللغة بالكامل. تخطيط RTL، خط نوتو كوفي عربي، أرقام عربية (٠–٩)، خيار التقويم الهجري، وقواعد تحليل تفهم العربي. غيّر اللغة أي وقت — بياناتك وتنسيقك وتقاريرك تتبعك.">
+              Fully bilingual. Right-to-left layout, Noto Kufi Arabic, Arabic numerals (٠–٩), Hijri calendar option, and Arabic-aware parsing rules. Switch language anytime — your data, formatting, and reports follow.
+            </p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>
+              <span data-en="Where is my data stored?" data-ar="فين يتم تخزين بياناتي؟">Where is my data stored?</span>
+              <span class="chev" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+              </span>
+            </summary>
+            <p data-en="On your iPhone. iCloud sync is opt-in and end-to-end encrypted. We do not run a backend that holds your transactions."
+               data-ar="على هاتفك. مزامنة iCloud اختيارية ومشفرة من الطرف للطرف. نحن لا نشغّل سيرفراً يخزّن معاملاتك.">
+              On your iPhone. iCloud sync is opt-in and end-to-end encrypted. We do not run a backend that holds your transactions.
+            </p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>
+              <span data-en="iOS only? What about Android?" data-ar="iOS فقط؟ ماذا عن أندرويد؟">iOS only? What about Android?</span>
+              <span class="chev" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+              </span>
+            </summary>
+            <p data-en="iOS first. We're focused on getting one platform truly right — Siri, widgets, lock-screen, share sheet — before splitting effort. Android is on the roadmap once iOS is stable."
+               data-ar="iOS أولاً. هدفنا نتقن منصة واحدة بالكامل — سيري، الودجات، شاشة القفل، مشاركة الرسائل — قبل ما نقسم المجهود. أندرويد ضمن الخطة بعد ما تستقر نسخة iOS.">
+              iOS first. We're focused on getting one platform truly right — Siri, widgets, lock-screen, share sheet — before splitting effort. Android is on the roadmap once iOS is stable.
+            </p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>
+              <span data-en="How accurate is the Zakah calculation?" data-ar="ما مدى دقة حساب الزكاة؟">How accurate is the Zakah calculation?</span>
+              <span class="chev" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+              </span>
+            </summary>
+            <p data-en="It follows standard fiqh: 2.5% on cash, gold, investments, and receivables above the silver/gold Nisab thresholds, with debts deducted. Gold Nisab uses live Cairo gram price; silver Nisab is editable. Hawl is tracked per-asset. You can override any input — it's a calculator, not a fatwa."
+               data-ar="يتبع الفقه القياسي: ٢٫٥٪ على النقد والذهب والاستثمارات والحقوق المستحقة، فوق نُصُب الذهب أو الفضة، مع خصم الديون. نصاب الذهب يُحسب بسعر جرام القاهرة الحي؛ نصاب الفضة قابل للتعديل. الحول يُتابع لكل أصل. يمكنك تعديل أي مدخل — إنها حاسبة، ليست فتوى.">
+              It follows standard fiqh: 2.5% on cash, gold, investments, and receivables above the silver/gold Nisab thresholds, with debts deducted. Gold Nisab uses live Cairo gram price; silver Nisab is editable. Hawl is tracked per-asset. You can override any input — it's a calculator, not a fatwa.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Final CTA ─────────────────────────────────────────── -->
+    <section class="section">
+      <div class="container">
+        <div class="final reveal">
+          <h2 data-en="Take control of your money — in your language."
+              data-ar="خُد زمام فلوسك — بلغتك.">
+            Take control of your money — in your language.
+          </h2>
+          <p data-en="Free to download. Free for all core features. Built in Cairo."
+             data-ar="مجاني للتحميل. مجاني لكل الميزات الأساسية. مصنوع في القاهرة.">
+            Free to download. Free for all core features. Built in Cairo.
+          </p>
+          <a class="appstore" href="#" aria-label="Download on the App Store">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.365 1.43c0 1.14-.41 2.21-1.23 3.18-.99 1.18-2.18 1.86-3.47 1.76-.16-1.12.4-2.29 1.21-3.21.9-1.02 2.34-1.78 3.49-1.73zm3.6 16.83c-.55 1.27-.81 1.83-1.51 2.95-.98 1.55-2.36 3.49-4.07 3.5-1.52.02-1.91-.99-3.97-.97-2.06.01-2.49.99-4.02.97-1.71-.02-3.02-1.77-4-3.32-2.74-4.34-3.03-9.43-1.34-12.14C2.27 7.4 4.18 6.4 5.97 6.4c1.83 0 2.97 1 4.48 1 1.46 0 2.35-1 4.46-1 1.6 0 3.3.87 4.51 2.37-3.96 2.17-3.32 7.83.54 9.49z"/></svg>
+            <span class="text">
+              <span class="top" data-en="Download on the" data-ar="حمّل من">Download on the</span>
+              <span class="bot" data-en="App Store" data-ar="App Store">App Store</span>
+            </span>
+          </a>
+          <div class="android" data-en="Coming soon to Android." data-ar="قريباً على أندرويد.">Coming soon to Android.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── Footer ─────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#top" class="brand" aria-label="Masareefy home">
+            <span class="brand-mark" aria-hidden="true"><img src="logo.svg" alt="" /></span>
+            <span data-en="Masareefy" data-ar="مصاريفي">Masareefy</span>
+          </a>
+          <p class="footer-brand-blurb"
+             data-en="Personal finance, built for Egypt. iPhone-first. Bilingual. Private."
+             data-ar="إدارة مصروفات، مصممة لمصر. آيفون أولاً. ثنائية اللغة. خصوصية محفوظة.">
+            Personal finance, built for Egypt. iPhone-first. Bilingual. Private.
+          </p>
+        </div>
+
+        <div>
+          <h5 data-en="Product" data-ar="المنتج">Product</h5>
+          <ul>
+            <li><a href="#features" data-en="Features" data-ar="المميزات">Features</a></li>
+            <li><a href="#how" data-en="How it works" data-ar="طريقة العمل">How it works</a></li>
+            <li><a href="#faq" data-en="FAQ" data-ar="الأسئلة">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 data-en="Company" data-ar="الشركة">Company</h5>
+          <ul>
+            <li><a href="privacy.html" data-en="Privacy" data-ar="الخصوصية">Privacy</a></li>
+            <li><a href="#" data-en="Terms" data-ar="الشروط">Terms</a></li>
+            <li><a href="#" data-en="Press" data-ar="الصحافة">Press</a></li>
+            <li><a href="#" data-en="Support" data-ar="الدعم">Support</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 data-en="Connect" data-ar="تواصل">Connect</h5>
+          <ul>
+            <li><a href="#" data-en="Twitter / X" data-ar="تويتر">Twitter / X</a></li>
+            <li><a href="#" data-en="Instagram" data-ar="إنستجرام">Instagram</a></li>
+            <li><a href="mailto:m.zakaria.elzoghbi@gmail.com">m.zakaria.elzoghbi@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-en="© 2026 Masareefy. Made in Cairo." data-ar="© ٢٠٢٦ مصاريفي. صُنع في القاهرة.">© 2026 Masareefy. Made in Cairo.</span>
+        <button class="lang-toggle" type="button"
+                onclick="document.getElementById('lang-toggle').click();"
+                aria-label="Switch language">
+          <span data-en="العربية" data-ar="English">العربية</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
