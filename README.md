@@ -1,7 +1,7 @@
-# Masareefy Landing
+# Masarefy Landing
 
 ## Goal
-Marketing landing page for **Masareefy** (Arabic: **مصاريفي**), a bilingual personal-finance iPhone app for the Egyptian market. The page drives App Store installs and feels like the same brand as the product prototype in `../masrefyv2/Masrefy/`.
+Marketing landing page for **Masarefy** (Arabic: **مصاريفي**), a bilingual personal-finance iPhone app for the Egyptian market. The page drives App Store installs and feels like the same brand as the product prototype in `../masrefyv2/Masrefy/`.
 
 Audience: Egyptian users tracking expenses across cash, bank cards, and mobile wallets (Instapay, Vodafone Cash, etc.). Bilingual EN + AR with full RTL support.
 

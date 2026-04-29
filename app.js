@@ -1,7 +1,7 @@
-// Masareefy landing — language toggle + scroll reveals.
+// Masarefy landing — language toggle + scroll reveals.
 
 (function () {
-  const STORAGE_KEY = 'masareefy-landing-lang';
+  const STORAGE_KEY = 'masarefy-landing-lang';
   const html = document.documentElement;
 
   const arabicDigits = (s) =>
@@ -48,7 +48,7 @@
 
     document.title = isAr
       ? 'مصاريفي — تطبيق إدارة المصاريف الشخصية'
-      : 'Masareefy — Personal finance, built for Egypt';
+      : 'Masarefy — Personal finance, built for Egypt';
 
     try { localStorage.setItem(STORAGE_KEY, lang); } catch (_) {}
   }
